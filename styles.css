@@ -6,7 +6,8 @@
     --a-color: rgb(37, 146, 146);
 
     --main-thematic-bg-color: rgb(2, 0, 36, 0.7);
-    --main-thematic-bg-color-transparent: rgb(53, 97, 138, 0);
+    --main-thematic-bg-color-transparent: rgb(2, 0, 36, 0);
+    --contact-card-bg-color:  rgba(2, 1, 19, 0.7);
     --title-font-size: 2.1em;
     --title-font-color: rgb(204, 140, 20);
 }
@@ -100,14 +101,71 @@ img {
     flex-direction: column;
 }
 
+.contact {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: var(--contact-card-bg-color);
+    padding: 2vh;
+    align-self: center;
+    width: fit-content;
+    text-align: start;
+
+}
+
+.feed {
+    display: grid;
+}
+
+.feed-title {
+    font-size: 1.4em;
+    text-align: center;
+    width: 90%;
+    background-color: var(--main-thematic-bg-color);
+    border-radius: 5px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.feed>ul {
+    display: grid;
+    justify-items: center;
+    /* align-content: center;   */
+    gap: 7vh;
+}
+
+.feed-item-desc {
+    animation: head-bg-trans 2s forwards;
+    /* height: 5vh; */
+    padding: 1vh;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid white;
+    margin: 2vh;
+}
+
+.feed-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 25px;
+    width: 85vw;
+}
+
 .no-bullets {
     padding: 0;
     list-style: none;
 }
 
 .footer {
-
-
     text-align: center;
     width: fit-content;
     justify-self: center;
