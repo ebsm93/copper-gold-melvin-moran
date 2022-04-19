@@ -63,21 +63,46 @@ img {
 
 .title {
     background-color: var(--main-thematic-bg-color);
-    font-size: var(--title-font-size);
     color: var(--title-font-color);
-    font-weight: 700;
-    text-decoration: underline;
     text-align: center;
     width: 100%;
+    height: 10vh;
     margin: 2vh;
     border-radius: 10px;
     justify-self: center;
-
+    
     position: sticky;
     top: 0px;
     z-index: 1;
+    
+    
+    font-size: var(--title-font-size);
+    animation: title-grow 3.5s forwards
+}
 
-    border: 1px solid white;
+@keyframes title-grow {
+    
+    from {
+        text-decoration: none;
+        border: 2px solid black;
+    }
+    
+    50% {
+        border: 2px solid black;
+        /* text-decoration: underline;
+        text-decoration-thickness: 1px ; */
+    }
+
+    80% {
+        /* border: 2px solid white; */
+    }
+    
+    to {
+        text-decoration: underline;
+        text-decoration-thickness: 1px ;
+        border: 2px solid white;
+    }
+     
  }
 
  .header {
