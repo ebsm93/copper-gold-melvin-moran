@@ -50,6 +50,11 @@ img {
     box-shadow: var(--img-shadow);
 }
 
+img:hover {
+    box-shadow: 3px 3px 3px  white;
+    cursor: pointer;
+}
+
 .title {
     font-size: var(--title-font-size);
     color: var(--title-font-color);
@@ -193,26 +198,6 @@ img {
     height: auto;
     justify-self: center;
 }
-
-img:hover {
-    box-shadow: 5px 5px 5px  white;
-}
-
-/* img:active {
-    animation: img-grow 1s forwards;
-} */
-
-/* @keyframes img-grow {
-
-    from {
-        
-    }
-
-    to {
-        transform:scale(1.5);
-    }
-    
-} */
 
 @keyframes link-trans {
 
