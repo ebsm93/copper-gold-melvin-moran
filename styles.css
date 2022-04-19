@@ -38,7 +38,21 @@ body {
 
     display: grid;
     justify-content: center;
-    
+    animation: content-trans 2s forwards;
+}
+
+@keyframes content-trans {
+    from {
+        opacity: 0%;
+    }
+
+    20% {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 a {
@@ -163,6 +177,32 @@ img {
 .no-bullets {
     padding: 0;
     list-style: none;
+}
+
+.slide-left-center {
+    animation: slide-left 1.3s forwards;
+}
+
+.slide-left-center-2 {
+    animation: slide-left 1.6s forwards;
+}
+
+.slide-left-center-3 {
+    animation: slide-left 1.9s forwards;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        /* transform: translateY(-350%);    */
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }
 
 .footer {
