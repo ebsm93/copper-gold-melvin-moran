@@ -33,6 +33,7 @@ body {
 }
 
 .page-wrap {
+    padding: 5px;
     display: grid;
     justify-content: center;
     animation: content-trans 2s forwards;
