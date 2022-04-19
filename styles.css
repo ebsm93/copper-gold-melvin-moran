@@ -26,16 +26,10 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin: 0;
-
-    
-    
-    /* background: rgb(2,0,36); */
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,68,1) 20%, rgba(8,29,142,1) 55%, rgba(0,129,255,1) 100%); */
+    margin: 0;   
 }
 
 .page-wrap {
-
     display: grid;
     justify-content: center;
     animation: content-trans 2s forwards;
@@ -177,6 +171,8 @@ img {
 .no-bullets {
     padding: 0;
     list-style: none;
+    display: grid;
+    gap: 2vh;
 }
 
 .slide-left-center {
@@ -211,5 +207,51 @@ img {
     justify-self: center;
     border-radius: 10px;
     margin: 1vh;
+    display: grid;
+    gap: 2vh;
 
+}
+
+
+@media (min-width: 500px) {
+
+    body {
+        font-size: calc(20px + 0.3vw);
+    }
+
+    .title {
+        font-size: calc(var(--title-font-size) + 0.4vw); 
+        padding: 1.5vw;
+        padding-top: 1vw;
+    }
+
+    .header {
+        width: 50vw;
+    }
+
+    img {
+        width: 30vw
+    }
+
+    .feed-title {
+        /* font-size: 1.3em; */
+        width: 65%;
+        padding: 0.7vw;
+    }
+
+    .feed-item {
+        width: 60vw;
+    }
+
+    .contact {
+        /* display: grid; */
+
+    }
+
+}
+
+#lilChris {
+    width: 30vw;
+    height: auto;
+    justify-self: center;
 }
