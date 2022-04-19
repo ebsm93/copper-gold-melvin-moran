@@ -110,6 +110,7 @@ img {
 }
 
 .contact {
+    font-size: 1.1em;
     border: 1px solid white;
     border-radius: 10px;
     background-color: var(--contact-card-bg-color);
@@ -175,6 +176,10 @@ img {
     gap: 2vh;
 }
 
+.licenses {
+    margin-top: 0;
+}
+
 .slide-left-center {
     animation: slide-left 1.3s forwards;
 }
@@ -185,6 +190,7 @@ img {
 
 .slide-left-center-3 {
     animation: slide-left 1.9s forwards;
+    font-size: 1.2em;
 }
 
 @keyframes slide-left {
