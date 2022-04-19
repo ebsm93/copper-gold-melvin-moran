@@ -1,13 +1,54 @@
-html, body {
+:root {
+    --root-font-size: 18px;
+    --root-font-weight: 700;
+    --root-font-color: rgb(204, 140, 20);
+    --root-font-shadow: 1px 1px 1px black;
+    --a-color: rgb(37, 146, 146);
 
+    --main-thematic-bg-color: rgb(53, 97, 138, 0.9);
+    --main-thematic-bg-color-transparent: rgb(53, 97, 138, 0);
+    --title-font-size: 2.1em;
+    --title-font-color: antiquewhite;
+}
+
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--a-color);
 }
 
 body {
-    color: rgb(207, 160, 4);
-    background-color: rgb(3, 3, 68);
+    color: var(--root-font-color);
+    text-shadow: var(--root-font-shadow);
+    background-image: url(./images-coppergold/blue-light.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,68,1) 20%, rgba(8,29,142,1) 55%, rgba(0,129,255,1) 100%); */
 }
 
-.header {
+img {
+    width: 60vw;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 8px black;
+}
+
+.page-wrap {
+
+}
+
+.title {
     text-align: center;
     font-size: 1.4em;
 }
