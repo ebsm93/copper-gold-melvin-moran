@@ -194,16 +194,21 @@ img:hover {
     font-size: 1.3em;
 }
 
-#lilChris {
+/* #lilChris {
     width: 30vw;
     height: auto;
     justify-self: center;
-}
+} */
 
 .clicked-image {
     -webkit-transform:scale(1.5);
     transform:scale(1.5);
 }
+
+.credits {
+    font-size: 0.6em;
+}
+
 
 @keyframes link-trans {
 
