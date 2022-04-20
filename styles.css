@@ -61,8 +61,8 @@ img:hover {
     color: var(--title-font-color);
     background-color: var(--main-thematic-bg-color);
     text-align: center;
+    padding: 4px;
     width: 100%;
-    /* height: 10vh; */
     margin: 2vh;
     border-radius: var(--standard-border-radius);
     justify-self: center;
